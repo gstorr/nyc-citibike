@@ -17,7 +17,7 @@ Added a df.dropna() step in order to remove rows where the station id/station na
 The script presumes:
 - uniformity in naming convention of the unzipped csv files (some files from 2013 and 2014 do not have the standard naming convention).
 - all raw trip csv files are in the same directory. It is a fairly simple change to expand to include subdirectories.
-- uniformity in the date/time convention and the column placement of the station name field for trip starts and ends.
+- uniformity in the date/time convention and the column placement of fields.
 
 **2.** Added a jupyter notebook script that will create a list of stations using the daily trip count files (4/12/2021)
 
