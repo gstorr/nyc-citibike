@@ -15,6 +15,11 @@ The script presumes:
 - all raw trip csv files are in the same directory. It is a fairly simple change to expand to include subdirectories
 - uniformity in the date/time convention and the column placement of the station name field for trip starts and ends
 
+**2.** Added a jupyter notebook script that will create a list of stations using the daily trip count files
+The output file will contain a list of stations using the trip count files from 2018-2021.
+Output includes: station id, station name, station latitude, station longitude
+
 **Next up:**
-- add station co-ordinates to allow for geo-spatial analysis in another application (e.g. ArcGIS, QGIS, Tableau) -- Done
+- for "1", add station co-ordinates to allow for geo-spatial analysis in another application (e.g. ArcGIS, QGIS, Tableau) -- Done
 - add steps to concatenate the files, to create separate trip count files for each year, and to create a single daily trip count file for all time
+- add staps to "2" that will add borough code to the station file; this will permit the aggregation of trip starts, trip ends, trip totals by borough
