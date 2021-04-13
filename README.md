@@ -24,7 +24,18 @@ The output file will contain a list of stations using the trip count files from 
 Output includes: station id, station name, station latitude, station longitude
 This notebook requires the daily trip count files in order to run
 
+**3.** Added a jupyter notebook script that will create a list of stations using the daily trip count files with county included (4/13/2021)
+File name is: station id, station name, station latitude, station longitude, county name
+This notebook requires the station list in order to run
+
+Added an if/except to catch/skip IndexError as there are two stations that have trips attributed to them with coordinates that fall outside the US. 
+These two stations are both located in Montreal, this may be a Citibike bike/station manufacture/testing site?
+It's not clear why these trips appear in the raw Citibike trip files.
+
+The output file is the output from "2" with a column for county name added.
+Output includes: 
+
 **Next up:**
 - for "1", add station co-ordinates to allow for geo-spatial analysis in another application (e.g. ArcGIS, QGIS, Tableau) -- Done
 - add steps to concatenate the files, to create separate trip count files for each year, and to create a single daily trip count file for all time
-- add steps to "2" that will add borough code to the station file; this will permit the aggregation of trip starts, trip ends, trip totals by borough
+- add steps to "2" that will add borough code to the station file; this will permit the aggregation of trip starts, trip ends, trip totals by borough -- Done
