@@ -6,6 +6,7 @@ This repository contains testing and output of various analyses of NYC Citibike 
 The Readme will be updated with information on any new analysis as it is uploaded. 
 
 **1.** Added a jupyter notebook script that will create daily trip counts for each Citibike station (4/6/2021)
+
 File name is: nyc_citibike_daily_trip_aggregator.ipynb
 
 The output files record daily trip starts and ends.
@@ -18,6 +19,7 @@ The script presumes:
 - uniformity in the date/time convention and the column placement of the station name field for trip starts and ends
 
 **2.** Added a jupyter notebook script that will create a list of stations using the daily trip count files (4/12/2021)
+
 File name is: nyc_citibike_station_list.ipynb
 
 The output file will contain a list of stations using the trip count files from 2018-2021.
@@ -25,7 +27,9 @@ Output includes: station id, station name, station latitude, station longitude
 This notebook requires the daily trip count files in order to run
 
 **3.** Added a jupyter notebook script that will create a list of stations using the daily trip count files with county included (4/13/2021)
+
 File name is: station id, station name, station latitude, station longitude, county name
+
 This notebook requires the station list in order to run
 
 Added an if/except to catch/skip IndexError as there are two stations that have trips attributed to them with coordinates that fall outside the US. 
