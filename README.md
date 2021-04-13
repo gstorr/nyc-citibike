@@ -15,7 +15,7 @@ The script presumes:
 - all raw trip csv files are in the same directory. It is a fairly simple change to expand to include subdirectories
 - uniformity in the date/time convention and the column placement of the station name field for trip starts and ends
 
-**2.** Added a jupyter notebook script that will create a list of stations using the daily trip count files
+**2.** Added a jupyter notebook script that will create a list of stations using the daily trip count files (4/12/2021)
 The output file will contain a list of stations using the trip count files from 2018-2021.
 Output includes: station id, station name, station latitude, station longitude
 
