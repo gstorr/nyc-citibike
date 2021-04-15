@@ -44,3 +44,4 @@ The output file is the output from "2" with a column for county name added.
 - for "1", add station co-ordinates to allow for geo-spatial analysis in another application (e.g. ArcGIS, QGIS, Tableau) -- Done
 - add steps to concatenate the files, to create separate trip count files for each year, and to create a single daily trip count file for all time
 - add steps to "2" that will add borough code to the station file; this will permit the aggregation of trip starts, trip ends, trip totals by borough -- Done
+- add steps to "3" that will add neighborhood/council district information to the fil; this will permit the aggregation of trip starts/ends and analysis of trips at a more granular neighborhood level
